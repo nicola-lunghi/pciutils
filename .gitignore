@@ -8,3 +8,8 @@ setpci
 example
 update-pciids
 pci.ids.gz
+
+# lib
+lib/pci/config.h
+lib/pci/config.mk
+lib/pci/libpci.pc
