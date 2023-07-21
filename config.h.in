@@ -1,0 +1,31 @@
+#ifndef PCI_CONFIG_H
+#define PCI_CONFIG_H
+
+// #define PCI_ARCH_X86_64
+#cmakedefine PCI_OS_LINUX
+#cmakedefine PCI_HAVE_PM_LINUX_SYSFS
+#cmakedefine PCI_HAVE_PM_LINUX_PROC
+#cmakedefine PCI_HAVE_PM_MMIO_CONF
+#cmakedefine PCI_HAVE_PM_ECAM
+#cmakedefine PCI_HAVE_LINUX_BYTEORDER_H
+
+#define PCI_PATH_PROC_BUS_PCI "@PCI_PATH_PROC_BUS_PCI@"
+#define PCI_PATH_SYS_BUS_PCI "@PCI_PATH_SYS_BUS_PCI@"
+#define PCI_PATH_DEVMEM_DEVICE "@PCI_PATH_DEVMEM_DEVICE@"
+#define PCI_PATH_ACPI_MCFG "@PCI_PATH_ACPI_MCFG@"
+#define PCI_PATH_EFI_SYSTAB "@PCI_PATH_EFI_SYSTAB@"
+
+#cmakedefine PCI_HAVE_PM_INTEL_CONF
+#cmakedefine PCI_HAVE_64BIT_ADDRESS
+#cmakedefine PCI_HAVE_PM_DUMP
+#cmakedefine PCI_COMPRESSED_IDS
+#cmakedefine PCI_IDS "pci.ids.gz"
+#define PCI_PATH_IDS_DIR "@PCI_PATH_IDS_DIR@"
+#cmakedefine PCI_USE_DNS
+#define PCI_ID_DOMAIN "@PCI_ID_DOMAIN@"
+#cmakedefine PCI_USE_LIBKMOD
+#cmakedefine PCI_HAVE_HWDB
+#cmakedefine PCI_SHARED_LIB
+#define PCILIB_VERSION "@pciutils_VERSION@"
+
+#endif /* PCI_CONFIG_H */

@@ -13,3 +13,4 @@ pci.ids.gz
 lib/pci/config.h
 lib/pci/config.mk
 lib/pci/libpci.pc
+build/
