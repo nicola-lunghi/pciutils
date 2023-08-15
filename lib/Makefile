@@ -75,6 +75,9 @@ ifdef PCI_HAVE_PM_WIN32_SYSDBG
 OBJS += win32-sysdbg
 endif
 
+################################################################################
+
+
 all: $(PCILIB) $(PCILIBPC)
 
 ifeq ($(SHARED),no)

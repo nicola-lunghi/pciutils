@@ -1,0 +1,34 @@
+/*
+ * Configuration script for the PCI library
+ * (c) 1998--2013 Martin Mares <mj@ucw.cz>
+ */
+
+#ifndef PCI_CONFIG_H
+#define PCI_CONFIG_H
+
+#cmakedefine PCILIB_VERSION "@pci_VERSION@"
+#cmakedefine PCI_SHARED_LIB
+
+#cmakedefine PCI_ARCH_X86_64
+#cmakedefine PCI_OS_LINUX
+#cmakedefine PCI_HAVE_PM_LINUX_SYSFS
+#cmakedefine PCI_HAVE_PM_LINUX_PROC
+#cmakedefine PCI_HAVE_PM_MMIO_CONF
+#cmakedefine PCI_HAVE_PM_ECAM
+#cmakedefine PCI_HAVE_LINUX_BYTEORDER_H
+#cmakedefine PCI_PATH_PROC_BUS_PCI "/proc/bus/pci"
+#cmakedefine PCI_PATH_SYS_BUS_PCI "/sys/bus/pci"
+#cmakedefine PCI_PATH_DEVMEM_DEVICE "/dev/mem"
+#cmakedefine PCI_PATH_ACPI_MCFG "/sys/firmware/acpi/tables/MCFG"
+#cmakedefine PCI_PATH_EFI_SYSTAB "/sys/firmware/efi/systab"
+#cmakedefine PCI_HAVE_PM_INTEL_CONF
+#cmakedefine PCI_HAVE_64BIT_ADDRESS
+#cmakedefine PCI_HAVE_PM_DUMP
+#cmakedefine PCI_COMPRESSED_IDS
+#cmakedefine PCI_IDS "pci.ids.gz"
+#define PCI_PATH_IDS_DIR "@PCI_PATH_IDS_DIR@"
+#cmakedefine PCI_USE_DNS
+#cmakedefine PCI_ID_DOMAIN "pci.id.ucw.cz"
+#cmakedefine PCI_HAVE_HWDB
+
+#endif /* PCI_CONFIG_H */
